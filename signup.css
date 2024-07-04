@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background: url('img/R.png') no-repeat;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+}
+.box {
+    width: 95%; /* 90% of the viewport width */
+    max-width: 500px; /* Maximum width of 500px */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */  
+    background: rgba(198, 205, 228, 0.3);
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.input-group {
+    display: flex;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+.input-group label {
+    color: #ffffff; /* White text color */
+    margin-bottom: 10px; /* Small space below label */
+}
+.input-group input {
+    width: 100%; /* Take full width */
+    padding: 10px; /* Padding inside input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border */
+}
+.submit {
+    text-decoration: none;
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 37%;
+    margin-bottom: 20px;
+}
+h1{
+    font-weight: 900;
+    text-align: center;
+}
+.Register{
+    text-align: center;
+}
+.submit:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+     /* Media Queries for responsiveness */
+     @media (max-width: 600px) {
+        .box {
+            width: 100%; /* Full width on small screens */
+            padding: 20px;
+        }
+        .input-group input {
+            padding: 8px; /* Smaller padding on small screens */
+        }
+        .submit {
+            width: 100%; /* Full width button on small screens */
+            padding: 15px;
+            font-size: 16px;
+        }
+    }

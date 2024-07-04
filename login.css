@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background: url('img/R.png') no-repeat;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 90%; /* 90% of the viewport width */
+    max-width: 500px; /* Maximum width of 600px */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */  
+    background:rgba(198, 205, 228, 0.3);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.pic-logo {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px;
+}
+
+.pic-logo img {
+    width: 350px;
+    height: 100px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    width: 100%; /* Take full width */
+    margin-bottom: 20px; /* Space between input groups */
+}
+
+.input-group label {
+    color: #ffffff; /* White text color */
+    margin-bottom: 5px; /* Small space below label */
+}
+
+.input-group input {
+    width: 95%; /* Take size of width */
+    padding: 9px; /* Padding inside input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border */
+}
+.placeholder {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(48, 44, 44); /* Black color */
+    font-style: italic;
+    transition: opacity 0.3s ease;
+    opacity: 1; /* Initially visible */
+}
+.placeholder2 {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(48, 44, 44); /* Black color */
+    font-style: italic;
+    transition: opacity 0.3s ease;
+    opacity: 1; /* Initially visible */
+}
+.submit {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: #007bff; /* Blue background */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding top/bottom 10px, left/right 20px */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin-top: 20px; /* Space above submit button */
+}
+
+.Register{
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.submit:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 15px; /* Smaller padding on small screens */
+    }
+
+    .input-group label {
+        font-size: 0.9em; /* Smaller font size for labels */
+    }
+
+    .input-group input {
+        padding: 8px; /* Smaller padding inside input */
+    }
+
+    .submit {
+        padding: 8px 16px; /* Smaller padding for submit button */
+        font-size: 0.9em; /* Smaller font size for submit button */
+    }
+}
+/* the code of the media is to make responsive and website */
